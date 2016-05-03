@@ -109,6 +109,6 @@ app.get("/", function(req, res){
   res.render("chart");
 });
 
-app.listen("3300", function(){
-  console.log('Server up: http://localhost:3300');
+app.listen("8800", function(){
+  console.log('Server up: http://localhost:8800');
 });

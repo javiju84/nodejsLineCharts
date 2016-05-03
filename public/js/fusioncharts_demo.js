@@ -3,7 +3,7 @@ var chartData;
 $(function(){
   $.ajax({
 
-    url: 'http://localhost:3300/informacion',
+    url: 'http://localhost:8800/informacion',
     type: 'GET',
     success : function(data) {
       chartData = data;
@@ -12,9 +12,9 @@ $(function(){
 
       var chartProperties = {
         "caption": "Grafico de Valores",
-        "numberprefix": "$",
-        "xAxisName": "Dias",
-        "yAxisName": "Precio"
+        "numberprefix": "Rs",
+        "xAxisName": "Month",
+        "yAxisName": "Price"
       };
 
       var categoriesArray = [{
