@@ -29,7 +29,7 @@ function getData(responseObj){
     var alzaPrecio = [];
     var bajadaPrecio = [];
     var cierrePrecio = [];
-    var volumenPrecio = [];
+   // var volumenPrecio = [];
     var ajuste_cierrePrecio = [];
 
     for ( index in docs){
@@ -42,14 +42,14 @@ function getData(responseObj){
       var alza = doc['alza'];
       var bajada = doc['bajada'];
       var cierre = doc['cierre'];
-      var volumen = doc['volumen'];
+     // var volumen = doc['volumen'];
       var ajuste_cierre = doc['ajuste_cierre'];
       fechaArray.push({"label": fecha});
       aperturaPrecio.push({"value" : apertura});
       alzaPrecio.push({"value" : alza});
       bajadaPrecio.push({"value" : bajada});
       cierrePrecio.push({"value" : cierre});
-      volumenPrecio.push({"value" : volumen});
+     // volumenPrecio.push({"value" : volumen});
       ajuste_cierrePrecio.push({"value" : ajuste_cierre});
 
     }
@@ -71,10 +71,10 @@ function getData(responseObj){
         "seriesname" : "Cierre Precio",
         "data" : cierrePrecio
       },
-       {
+   /*    {
         "seriesname" : "Volumen Precio",
         "data" : volumenPrecio
-      },
+      }*/,
        {
         "seriesname" : "Ajuste Cierre Precio",
         "data" : ajuste_cierrePrecio
