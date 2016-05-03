@@ -1,0 +1,28 @@
+{
+  "name": "linecharts",
+  "version": "1.0.0",
+  "description": "grafico linea con dnodejs y mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiju84/nodejsLineCharts.git"
+  },
+  "author": "javiju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiju84/nodejsLineCharts/issues"
+  },
+  "homepage": "https://github.com/javiju84/nodejsLineCharts#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.4.14",
+    "request": "^2.72.0"
+  }
+}
